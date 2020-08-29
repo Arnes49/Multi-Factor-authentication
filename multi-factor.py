@@ -17,8 +17,8 @@ def send_email(receiver, password):
     # traffic encryption
     server.starttls()
     # login into system, from which we send keys.
-    system_pass = "ntcncbcntv409"
-    system_email = "testsystemfor409@gmail.com"
+    system_pass = "sytem_pass"
+    system_email = "system_gmail@.com"
     server.login(system_email, system_pass)
 
     key = hashing_method(password)

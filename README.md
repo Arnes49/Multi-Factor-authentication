@@ -1,2 +1,2 @@
-# login-and-register-system
+# Multi-Factor Authentication
 Multi-Factor authentication by email

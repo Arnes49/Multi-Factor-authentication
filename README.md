@@ -1,2 +1,2 @@
 # login-and-register-system
-Login and register system using two-factor authentication
+Multi-Factor authentication by email

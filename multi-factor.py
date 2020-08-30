@@ -1,8 +1,12 @@
 import hashlib
 import smtplib
+import random
 
 
 def hashing_method(hash_pass):
+    # add to key random number, to keep keys different
+    rand = random.randint(1000, 10000)
+    hash_pass += str(rand)
     key = hashlib.md5(hash_pass.encode())
     return key.hexdigest()
 
@@ -25,7 +29,6 @@ def send_email(receiver, password):
     msg = \
         f"""
     Authentication code is: {key}
-
     Sincerely, 
     Your support.
     """
